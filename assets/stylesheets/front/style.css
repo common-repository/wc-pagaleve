@@ -1,0 +1,118 @@
+.payment_method_pagaleve-pix img {
+  float: right;
+  border: 0;
+  padding: 0;
+  max-height: 1.618em;
+}
+.payment_method_pagaleve-pix .wc-pagaleve-pix-container {
+  font-family: Verdana, sans-serif;
+  background-color: #fff;
+  text-align: center;
+}
+.payment_method_pagaleve-pix .wc-pagaleve-pix-container #wc-pagaleve-background {
+  float: none;
+  margin: 0 auto;
+  font-size: 230px;
+}
+.payment_method_pagaleve-pix .wc-pagaleve-pix-container .wc-pagaleve-env {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+  font: normal normal normal 12px/1.3 Verdana, sans-serif;
+  color: #555;
+  font-size: 13px;
+}
+
+.payment_method_pagaleve-pix-cash img {
+  float: right;
+  border: 0;
+  padding: 0;
+  max-height: 1.618em;
+}
+.payment_method_pagaleve-pix-cash .wc-pagaleve-pix-cash-container {
+  font-family: Verdana, sans-serif;
+  background-color: #fff;
+  text-align: center;
+}
+.payment_method_pagaleve-pix-cash .wc-pagaleve-pix-cash-container .wc-pagaleve-env {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+  font: normal normal normal 12px/1.3 Verdana, sans-serif;
+  color: #555;
+  font-size: 13px;
+}
+.payment_method_pagaleve-pix-cash .wc-pagaleve-pix-cash-container #wc-pagaleve-cash-background {
+  float: none;
+  margin: 0 auto;
+  font-size: 230px;
+}
+
+@media screen and (max-width: 400px) {
+  .payment_method_pagaleve-pix .wc-pagaleve-pix-container .wc-pagaleve-text {
+    max-width: 190px;
+  }
+}
+#pagaleve-thankyou {
+  padding: 15px 0px 15px 0px;
+  margin-bottom: 1.9em;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 2px #cccccc;
+  text-align: center;
+}
+#pagaleve-thankyou .pagaleve-container fieldset {
+  background-color: transparent !important;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 1;
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagaleve-dual-ring {
+  display: inline-block;
+}
+.pagaleve-dual-ring::after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgb(255, 255, 255);
+  border-color: #FE35F1 transparent #12F2AA transparent;
+  animation: pagaleve-dual-ring 1.2s linear infinite;
+}
+
+@keyframes pagaleve-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+.overlay.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 1;
+  transition: all 0.5s;
+  
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagaleve-dual-ring {
+  display: inline-block;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid rgb(255, 255, 255);
+    border-color: #FE35F1 transparent #12F2AA transparent;
+    animation: pagaleve-dual-ring 1.2s linear infinite;
+  }
+}
+
+@keyframes pagaleve-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

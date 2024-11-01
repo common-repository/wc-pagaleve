@@ -1,0 +1,75 @@
+.payment_method_pagaleve-pix {
+  img {
+    float: right;
+    border: 0;
+    padding: 0;
+    max-height: 1.618em;
+  }
+
+  .wc-pagaleve-pix-container {
+    font-family: Verdana, sans-serif;
+    background-color: #fff;
+    text-align: center;
+
+    #wc-pagaleve-background {
+      float: none;
+      margin: 0 auto;
+      font-size: 230px;
+    }
+
+    .wc-pagaleve-env {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      vertical-align: baseline;
+      list-style: none;
+      font: normal normal normal 12px/1.3 Verdana, sans-serif;
+      color: #555;
+      font-size: 13px;
+    }
+  }
+}
+
+.payment_method_pagaleve-pix-cash {
+  img {
+    float: right;
+    border: 0;
+    padding: 0;
+    max-height: 1.618em;
+  }
+
+  .wc-pagaleve-pix-cash-container {
+    font-family: Verdana, sans-serif;
+    background-color: #fff;
+    text-align: center;
+
+    .wc-pagaleve-env {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      vertical-align: baseline;
+      list-style: none;
+      font: normal normal normal 12px/1.3 Verdana, sans-serif;
+      color: #555;
+      font-size: 13px;
+    }
+
+    #wc-pagaleve-cash-background {
+      float: none;
+      margin: 0 auto;
+      font-size: 230px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .payment_method_pagaleve-pix {
+    .wc-pagaleve-pix-container {
+      .wc-pagaleve-text {
+       max-width: 190px;
+      }
+    }
+  }
+}
